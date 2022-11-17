@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1440px;
+    background: hsl(0 0 96%);
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 1em;
+    height: 75vh;
+    width: 55vw;
+    overflow: hidden;
+    z-index: 10;
+    box-shadow: 0px 3px 20px 0px lightgrey;
+}
+
+.top {
+    height: 50%;
+    width: 100%;
+    font-size: 18px;
+    padding: 2.5rem 4.5rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.top h1 {
+    color: hsl(179, 62%, 43%);
+    margin: 0.8em 0;
+}
+
+.top h2 {
+    color: hsl(71, 73%, 54%);
+    margin: 0.5em 0;
+}
+
+.top p {
+    color: hsl(204deg 1% 84%);
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+}
+
+.minicard1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: hsl(179, 62%, 43%);
+    padding: 2rem 2.5rem;
+    color: white;
+    font-size: 1.1em;
+    z-index: 13;
+}
+
+.minicard1 h3 {
+    margin: 0 0 1rem 0;
+}
+
+.minicard1 span {
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+.minicard1 span h1 {
+    margin-right: 1rem;
+}
+
+.minicard1 span p {
+    color: #cff2fc;
+}
+
+.minicard1 .btn {
+    border: 0;
+    margin-top: 2rem;
+    outline: 0;
+    width: 85%;
+    padding: 1rem;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 0.4em;
+    background: #c0df34;
+    box-shadow: 2px 2px 15px 2px #1c8886;
+    z-index: 20;
+}
+
+.minicard2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background: hsl(179deg 62% 43% / 83%);
+    padding: 2rem 2.5rem;
+    color: white;
+    font-size: 1.1em;
+    flex-direction: column;
+    z-index: 15
+}
+
+.minicard2 h3 {
+    margin: 0 0 1rem 0;
+}
+
+.minicard2 p {
+    line-height: 1.2;
+    color: #c8ebfa;
+}
+
+@media (max-width: 420px) {
+    .card {
+        width: 70vw;
+        height: 85vh;
+        border-radius: 10px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .minicard1,
+    .minicard2 {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .top {
+        font-size: 10px;
+        padding: 1.5rem;
+    }
+
+    .bottom {
+        font-size: 10px;
+    }
+
+    .minicard1 .btn {
+        margin-top: 1rem;
+        padding: 0.7rem;
+        width: 100%;
+    }
+
+    .minicard1 h3,
+    .minicard2 h3 {
+        margin: 0 0 0.8rem 0;
+    }
+
+    .minicard1 span h1 {
+        margin-right: 0.4rem;
+    }
+
+}
